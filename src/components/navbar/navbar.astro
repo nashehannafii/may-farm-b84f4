@@ -1,6 +1,7 @@
 ---
 import Button from "@components/ui/button.astro";
 import Link from "@components/ui/link.astro";
+import { localizePath } from "astro-i18next";
 import { Icon } from "astro-icon/components";
 import { t } from "i18next";
 
@@ -14,15 +15,15 @@ export const menuitems = [
 		],
 	},
 	{
-		title: "Pricing",
+		title: "header.pricing",
 		path: "/pricing",
 	},
 	{
-		title: "Blog",
+		title: "header.blog",
 		path: "/blog",
 	},
 	{
-		title: "Contact",
+		title: "header.contact",
 		path: "/contact",
 	},
 ];
