@@ -43,14 +43,14 @@ const { dynamic = false } = Astro.props;
 					<Link href="/products">Pesan Sekarang</Link>
 					{
 						dynamic ? (
-							<Link href="/about" style="muted">
+							<Link href="/about" >
 								Tentang Kami
 								<span aria-hidden="true" class="pl-1 text-black dark:text-white">
 									→
 								</span>
 							</Link>
 						) : (
-							<Link href="/contact" style="muted">
+							<Link href="/contact" >
 								Hubungi Kami
 								<span aria-hidden="true" class="pl-1 text-black dark:text-white">
 									→

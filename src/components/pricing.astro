@@ -42,7 +42,7 @@ const { plan } = Astro.props;
         href={plan.button.link || "#"} 
         aria-describedby={`tier-${plan.name.toLowerCase().replace(/\s+/g, '-')}`} 
         style="outline" 
-        class="block w-full mt-6 text-center py-3 bg-green-600 hover:bg-green-700 text-white font-medium transition-colors"
+		class="block w-full mt-6"
     >
         {plan.button.text || "Pesan Sekarang"}
     </Link>
@@ -50,8 +50,7 @@ const { plan } = Astro.props;
     <!-- Tombol Secondary - Lihat Detail -->
     <Link 
         href={plan.detailLink || `/products/${plan.name.toLowerCase().replace(/\s+/g, '-')}`} 
-        style="muted" 
-        class="block w-full mt-3 text-center py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 font-medium transition-colors"
+		class="block w-full mt-6"
     >
         Lihat Detail
     </Link>
