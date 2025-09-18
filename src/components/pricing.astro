@@ -7,7 +7,14 @@ const { plan } = Astro.props;
 
 <div class="rounded-md p-8 xl:p-10 ring-1 ring-gray-200 dark:bg-stone-950 dark:ring-gray-700 w-full max-w-md mx-auto">
     <div class="flex items-center justify-between gap-x-4">
-        <h3 id="tier-enterprise" class="text-lg font-semibold leading-8 text-gray-900 dark:text-white">{plan.name}</h3>
+        <h3 id="tier-{plan.name.toLowerCase().replace(/\s+/g, '-')}" class="text-lg font-semibold leading-8 text-gray-900 dark:text-white">
+            {plan.name}
+        </h3>
+        {plan.popular && (
+            <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">
+                Terlaris
+            </span>
+        )}
     </div>
     
     <!-- Gambar responsif di bawah h3 -->
@@ -30,8 +37,23 @@ const { plan } = Astro.props;
         )}
     </p>
     
-    <Link href="#" aria-describedby="tier-enterprise" style="outline" class="block w-full mt-6 text-center py-3">
-        {plan.button.text || "Get Started"}
+    <!-- Tombol Primary - Pesan Sekarang -->
+    <Link 
+        href={plan.button.link || "#"} 
+        aria-describedby={`tier-${plan.name.toLowerCase().replace(/\s+/g, '-')}`} 
+        style="outline" 
+        class="block w-full mt-6 text-center py-3 bg-green-600 hover:bg-green-700 text-white font-medium transition-colors"
+    >
+        {plan.button.text || "Pesan Sekarang"}
+    </Link>
+    
+    <!-- Tombol Secondary - Lihat Detail -->
+    <Link 
+        href={plan.detailLink || `/products/${plan.name.toLowerCase().replace(/\s+/g, '-')}`} 
+        style="muted" 
+        class="block w-full mt-3 text-center py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 font-medium transition-colors"
+    >
+        Lihat Detail
     </Link>
     
     <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 dark:text-gray-300 xl:mt-10">
