@@ -1,50 +1,50 @@
 {
 	"hero": {
-		"title": "Peternakan Ayam Kampung Unggulan",
-		"subtitle": "Menyediakan Ayam Kampung Berkualitas, Sehat, dan Alami untuk Kebutuhan Anda.",
-		"globe_title": "Dari Kandang Kami Langsung ke Meja Makan Anda",
-		"main_button_text": "Lihat Produk Kami",
-		"secondary_button_text": "Jelajahi Peternakan"
+		"title": "Supercharged web development!",
+		"subtitle": "Unleashing the Power of the Web: Combines Astro, Tailwind CSS and Alpine.js to Streamline Your Web Development Process.",
+		"globe_title": "Craft Stunning, High-Performance Websites with Ease and Speed",
+		"main_button_text": "Download on github",
+		"secondary_button_text": "Go to animated version"
 	},
 	"hero_animated": {
-		"secondary_button_text": "Kembali ke Beranda"
+		"secondary_button_text": "Go to base version"
 	},
 	"header": {
-		"features": "Keunggulan",
-		"pricing": "Harga",
+		"features": "Features",
+		"pricing": "Pricing",
 		"blog": "Blog",
-		"contact": "Kontak",
-		"primary_button_text": "Pesan Sekarang",
-		"secondary_button_text": "Hubungi Kami"
+		"contact": "Contacts",
+		"primary_button_text": "Download",
+		"secondary_button_text": "Login"
 	},
 	"features": {
-		"learn_more": "Selengkapnya",
-		"title": "Keunggulan Kami",
-		"subtitle": "Mengapa Memilih Ayam Kami?",
-		"description": "Kami berkomitmen untuk beternak ayam kampung dengan cara yang alami dan berkelanjutan, memastikan kualitas dan kesehatan terbaik untuk konsumen.",
-		"astro": "Peternakan Lokal. Ayam kami dipelihara di lingkungan yang luas dan alami, bukan dari kandang baterai industri.",
-		"alpine": "Pakan Alami. Ayam-ayam kami diberi makan dengan pakan organik berkualitas tinggi tanpa tambahan hormon atau antibiotik.",
-		"tailwind": "Sehat & Berkualitas. Proses pemeliharaan yang higienis dan pemeriksaan kesehatan rutin menjamin ayam yang sehat dan aman dikonsumsi.",
-		"localization": "Segar & Siap Masak. Kami menyediakan ayam kampung segar yang diproses secara higienis dan siap untuk diolah menjadi masakan lezat keluarga Anda.",
-		"light_dark_mode": "Dukungan Pelanggan. Tim kami siap membantu Anda dengan pertanyaan dan pemesanan, memberikan layanan yang ramah dan informatif.",
-		"giscus": "Pengiriman Tepat Waktu. Kami mengutamakan kesegaran produk dengan sistem pengiriman yang cepat dan efisien ke seluruh wilayah.",
-		"decapcms": "Peternakan Berkelanjutan. Kami mempraktikkan peternakan yang bertanggung jawab terhadap kesejahteraan hewan dan lingkungan.",
-		"rss": "Resep & Tips. Dapatkan inspirasi memasak dengan resep-resep lezat berbahan ayam kampung dari blog kami.",
-		"articlegenerator": "Pemesanan Online. Pesan ayam kampung segar kapan saja dengan mudah melalui website kami."
+		"learn_more": "Learn more",
+		"title": "Features",
+		"subtitle": "All the tools you need",
+		"description": "Astro is a high-performance static site builder that seamlessly integrates with Tailwind CSS and Alpine.js. It allows you to build websites with ease and speed, without sacrificing on performance.",
+		"astro": "Astro is the all-in-one web framework designed for speed. Pull your content from anywhere and deploy everywhere, all powered by your favorite UI components and libraries.",
+		"alpine": "Alpine is a rugged, minimal tool for composing behavior directly in your markup. Think of it like jQuery for the modern web. Plop in a script tag and get going.",
+		"tailwind": "A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.",
+		"localization": "An astro integration of i18next + some utility components to help you translate your astro websites!",
+		"light_dark_mode": "Light/Dark mode based on tailwind classes",
+		"giscus": "A comments system powered by GitHub Discussions. Let visitors leave comments and reactions on your website via GitHub!",
+		"decapcms": "Open source content management for your Git workflow",
+		"rss": "RSS generated using @astrojs/rss",
+		"articlegenerator": "Use AI to generate your articles posts"
 	},
 	"faq": {
-		"title": "Pertanyaan yang Sering Diajukan"
+		"title": "Frequently Asked Questions"
 	},
 	"newsletter": {
-		"title": "Berlangganan Newsletter Kami",
-		"subtitle": "Dapatkan info terbaru tentang promo dan tips peternakan",
-		"input_placeholder": "Masukkan alamat email Anda",
-		"button_text": "Berlangganan",
-		"privacy": "Kami menjaga kerahasiaan data Anda. Baca",
-		"privacy_link": "Kebijakan Privasi kami."
+		"title": "Subscribe to our newsletter",
+		"subtitle": "Get notified for all updates",
+		"input_placeholder": "Enter your email",
+		"button_text": "Subscribe",
+		"privacy": "We care about the protection of your data. Read our",
+		"privacy_link": "Privacy Policy."
 	},
 	"blog": {
-		"prev": "Sebelumnya",
-		"next": "Selanjutnya"
+		"prev": "Prev",
+		"next": "Next"
 	}
 }
