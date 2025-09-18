@@ -4,75 +4,84 @@ import { t } from "i18next";
 
 const faqs = [
 	{
-		title: "What is this?",
-		description: "This is a astro template that uses tailwindcss and alpinejs",
+		title: "Apa itu ayam kampung dan keunggulannya?",
+		description: "Ayam kampung adalah jenis ayam yang dipelihara secara tradisional dengan sistem umbaran (free range). Keunggulannya termasuk daging yang lebih padat, rasa yang gurih alami, rendah lemak, dan bebas dari hormon serta antibiotik.",
 	},
 	{
-		title: "Why alpinejs? Why don't just use js?",
-		description:
-			"Alpine js is less than 17kb and it make javascript very fast to write, there are also various open source ready to use components like https://js.hyperui.dev, https://www.alpinetoolbox.com/examples, https://alpinejs.dev/components#components",
+		title: "Berapa lama ayam kampung siap panen?",
+		description: "Ayam kampung biasanya dipanen pada usia 6-8 bulan untuk mendapatkan kualitas daging yang optimal. Namun untuk konsumsi pribadi, ada yang memanen pada usia 4-5 bulan.",
 	},
 	{
-		title: "But I don't need alpine js, can I remove it?",
-		description: `Of course, but some components use it and you'll have to edit these, more specifically you ll have to: <br/>
+		title: "Apa perbedaan ayam kampung dengan ayam broiler?",
+		description: `Perbedaan utama:<br/>
 					<ul style="list-style: inside;">
-						<li>First remove the package with the command <code>npm unistall @astrojs/alpinejs @types/alpinejs alpinejs</code></li>
-						<li>Adjust all components that uses alpine js: <code>faq.astro</code>, <code>themeselector.astro</code>, <code>navbar.astro</code></li>
+						<li><strong>Ayam kampung:</strong> Pertumbuhan lambat (6-8 bulan), daging padat, rasa gurih, dipelihara secara tradisional</li>
+						<li><strong>Ayam broiler:</strong> Pertumbuhan cepat (30-40 hari), daging empuk, dipelihara intensif dengan pakan khusus</li>
 					</ul>`,
 	},
 	{
-		title: "Can I remove also tailwidcss?",
-		description:
-			"I mean, you can, but you'll have to basically rewrite all the template, so I don't recommend it",
+		title: "Bagaimana cara beternak ayam kampung untuk pemula?",
+		description: "Untuk pemula, disarankan mulai dengan 10-20 ekor, siapkan kandang yang aman dari predator, beri pakan campuran antara konsentrat dan dedak, serta sediakan tempat minum dan makan yang cukup.",
 	},
 	{
-		title: "I don't need multiple language, how can I remove it?",
-		description: `One way is to simply keep one language and remove the selector from the footer but in order to fully remove the localization you have to: <br/>
+		title: "Apa saja pakan yang baik untuk ayam kampung?",
+		description: `Pakan ayam kampung yang baik meliputi:<br/>
 					<ul style="list-style: inside;">
-						<li>Remove the i18next pacakage <code>npm unistall astro-i18next</code></li>
-						<li>Remove <code>astro-i18next.config.mjs</code> file</li>
-						<li>Remove <code>locales</code> folder from public</li>
-						<li>Remove <code>languageselector.astro</code> file and from footer</li>
-						<li>Find all reference to <code>i18next</code> and <code>astro-i18next</code> and replace with your text</li>
+						<li>Pakan konsentrat (voor)</li>
+						<li>Dedak/bekatul</li>
+						<li>Jagung giling</li>
+						<li>Sisa nasi atau sayuran</li>
+						<li>Tambahan vitamin dan mineral</li>
 					</ul>`,
 	},
 	{
-		title: "I don't need dark mode, how can I remove it?",
-		description:
-			"Dark mode is embedded into tailwindcss, so you can't remove it, but you can remove the switch from the navbar",
+		title: "Berapa harga ayam kampung per ekor?",
+		description: "Harga ayam kampung bervariasi tergantung usia dan daerah. Rata-rata berkisar antara Rp 80.000 - Rp 150.000 per ekor untuk usia 6-8 bulan. Harga dapat berbeda di setiap musim dan lokasi.",
 	},
 	{
-		title:
-			"How can I configure the Sveltia CMS authentication with cloudflare?",
-		description: `To configure Sveltia CMS with cloudflare follow this guide <a href="https://github.com/sveltia/sveltia-cms" target="_blank">https://github.com/sveltia/sveltia-cms</a>`,
-	},
-	{
-		title: "How can I configure the decap CMS authentication with netlify?",
-		description: `To configure decap CMS with netlify do the followings:
+		title: "Bagaimana cara membedakan ayam kampung asli dan campuran?",
+		description: `Ciri-ciri ayam kampung asli:<br/>
 					<ul style="list-style: inside;">
-						<li>Change NetlifyCMS config <code>config.backend.name</code> to git-gateway</li>
-						<li>Use integrated NetlifyCMS auth <a href="https://decapcms.org/docs/git-gateway-backend/#git-gateway-with-netlify" target="_blank">https://decapcms.org/docs/git-gateway-backend/#git-gateway-with-netlify</a></li>
+						<li>Postur tubuh ramping dan proporsional</li>
+						<li>Kaki kecil dan kurus</li>
+						<li>Paruh kuat dan tajam</li>
+						<li>Warna kulit kuning kecoklatan</li>
+						<li>Daging lebih kenyal dan padat</li>
 					</ul>`,
 	},
 	{
-		title: "How can I change the localization languages?",
-		description: `In order to change the languages you have to change the languages in the file <code>astro-i18next.config.mjs</code> and in the netlifyCMS configuration on the file <code>astro.config.mjs</code> <br/>
-					Then change the locales files folders in <code>public/locales</code>`,
+		title: "Apakah ternak ayam kampung menguntungkan?",
+		description: "Ya, ternak ayam kampung cukup menguntungkan karena permintaan pasar yang stabil dan harga jual yang tinggi. Keuntungan bisa mencapai 30-40% dari modal dengan perawatan yang tepat.",
 	},
 	{
-		title: "What are the files in the funciotn folder used for?",
-		description: `These are cloudflare function that are used for the authentication to the decap CMS`,
+		title: "Berapa banyak telur yang dihasilkan ayam kampung?",
+		description: "Ayam kampung betina dapat menghasilkan 10-15 butir telur per bulan, atau sekitar 120-180 butir per tahun. Produktivitas telur dipengaruhi oleh kualitas pakan dan perawatan.",
 	},
 	{
-		title: "The build on cloudflare keep failing, why?",
-		description: `One of the problem could be that the Build system version is setted to version 1, make sure that version 2 is selected`,
+		title: "Bagaimana cara mencegah penyakit pada ayam kampung?",
+		description: `Pencegahan penyakit dapat dilakukan dengan:<br/>
+					<ul style="list-style: inside;">
+						<li>Kebersihan kandang yang terjaga</li>
+						<li>Vaksinasi rutin</li>
+						<li>Pemberian vitamin dan probiotik</li>
+						<li>Isolasi ayam yang sakit</li>
+						<li>Sirkulasi udara yang baik</li>
+					</ul>`,
 	},
+	{
+		title: "Bisakah ayam kampung dipelihara di perkotaan?",
+		description: "Bisa, asalkan memenuhi syarat: memiliki halaman yang cukup, kandang yang bersih dan tertutup, serta tidak mengganggu tetangga. Beberapa kota memiliki peraturan khusus tentang pemeliharaan ternak.",
+	},
+	{
+		title: "Apa keunggulan telur ayam kampung dibanding telur biasa?",
+		description: "Telur ayam kampung memiliki kuning telur yang lebih pekat, rasa yang lebih gurih, kandungan omega-3 yang lebih tinggi, dan bebas dari residu antibiotik. Kulit telur juga lebih keras dan tebal.",
+	}
 ];
 ---
 
 <div class="mx-auto max-w-5xl px-6 py-24 sm:py-36 lg:px-8 lg:py-52 dark:bg-stone-950">
 	<div class="mx-auto divide-y divide-gray-900/10 dark:divide-gray-100/10">
-		<h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900 dark:text-white">{t("faq.title")}</h2>
+		<h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900 dark:text-white">Frequently Asked Questions</h2>
 		<dl class="mt-10 space-y-6 divide-y divide-gray-900/10 dark:divide-gray-100/10">
 			{
 				faqs.map((faq) => (
@@ -83,7 +92,7 @@ const faqs = [
 								class="flex w-full items-start justify-between text-left text-gray-900 dark:text-white"
 								@click="open = !open"
 								:x-bind:aria-expanded="open.toString()">
-								<span class="text-base font-semibold leading-7">{faq.title}</span>
+								<span class="text-base font-semibold leading-7">Frequently Asked Questions</span>
 								<span class="ml-6 flex h-7 items-center">
 									<svg
 										class="h-6 w-6"
