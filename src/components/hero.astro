@@ -3,10 +3,7 @@ import { Image } from "astro:assets";
 import Cobe from "@components/cobe.astro";
 import Link from "@components/ui/link.astro";
 import abstractDottedGlobeIllustration from "assets/abstract-dotted-globe-illustration.png";
-// import { t } from "i18next";
-import { t, loadTranslations } from 'astro-i18next';
-await loadTranslations('en', 'common');
-
+import { t } from "i18next";
 
 const { dynamic = false } = Astro.props;
 ---
