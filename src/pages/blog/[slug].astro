@@ -6,11 +6,11 @@ import { getArticleReadingTime } from "@utils/blog";
 import { Icon } from "astro-icon/components";
 
 
-changeLanguage("en");
+ 
 
 // Generate a new path for every collection post
 export async function getStaticPaths() {
-	changeLanguage("en");
+	 
 	const blogEntries = await getCollection("blog");
 	var localizedBlogEntries = blogEntries.filter((entry) =>
 		entry.slug.startsWith(i18next.language),
