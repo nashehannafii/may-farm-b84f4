@@ -1,0 +1,50 @@
+{
+    "hero": {
+        "title": "Peternakan Ayam Kampung Unggulan",
+        "subtitle": "Menyediakan Ayam Kampung Berkualitas, Sehat, dan Alami untuk Kebutuhan Anda.",
+        "globe_title": "Dari Kandang Kami Langsung ke Meja Makan Anda",
+        "main_button_text": "Lihat Produk Kami",
+        "secondary_button_text": "Jelajahi Peternakan"
+    },
+    "hero_animated": {
+        "secondary_button_text": "Kembali ke Beranda"
+    },
+    "header": {
+        "features": "Keunggulan",
+        "pricing": "Harga",
+        "blog": "Blog",
+        "contact": "Kontak",
+        "primary_button_text": "Pesan Sekarang",
+        "secondary_button_text": "Hubungi Kami"
+    },
+    "features": {
+        "learn_more": "Selengkapnya",
+        "title": "Keunggulan Kami",
+        "subtitle": "Mengapa Memilih Ayam Kami?",
+        "description": "Kami berkomitmen untuk beternak ayam kampung dengan cara yang alami dan berkelanjutan, memastikan kualitas dan kesehatan terbaik untuk konsumen.",
+        "astro": "Peternakan Lokal. Ayam kami dipelihara di lingkungan yang luas dan alami, bukan dari kandang baterai industri.",
+        "alpine": "Pakan Alami. Ayam-ayam kami diberi makan dengan pakan organik berkualitas tinggi tanpa tambahan hormon atau antibiotik.",
+        "tailwind": "Sehat & Berkualitas. Proses pemeliharaan yang higienis dan pemeriksaan kesehatan rutin menjamin ayam yang sehat dan aman dikonsumsi.",
+        "localization": "Segar & Siap Masak. Kami menyediakan ayam kampung segar yang diproses secara higienis dan siap untuk diolah menjadi masakan lezat keluarga Anda.",
+        "light_dark_mode": "Dukungan Pelanggan. Tim kami siap membantu Anda dengan pertanyaan dan pemesanan, memberikan layanan yang ramah dan informatif.",
+        "giscus": "Pengiriman Tepat Waktu. Kami mengutamakan kesegaran produk dengan sistem pengiriman yang cepat dan efisien ke seluruh wilayah.",
+        "decapcms": "Peternakan Berkelanjutan. Kami mempraktikkan peternakan yang bertanggung jawab terhadap kesejahteraan hewan dan lingkungan.",
+        "rss": "Resep & Tips. Dapatkan inspirasi memasak dengan resep-resep lezat berbahan ayam kampung dari blog kami.",
+        "articlegenerator": "Pemesanan Online. Pesan ayam kampung segar kapan saja dengan mudah melalui website kami."
+    },
+    "faq": {
+        "title": "Pertanyaan yang Sering Diajukan"
+    },
+    "newsletter": {
+        "title": "Berlangganan Newsletter Kami",
+        "subtitle": "Dapatkan info terbaru tentang promo dan tips peternakan",
+        "input_placeholder": "Masukkan alamat email Anda",
+        "button_text": "Berlangganan",
+        "privacy": "Kami menjaga kerahasiaan data Anda. Baca",
+        "privacy_link": "Kebijakan Privasi kami."
+    },
+    "blog": {
+        "prev": "Sebelumnya",
+        "next": "Selanjutnya"
+    }
+}
