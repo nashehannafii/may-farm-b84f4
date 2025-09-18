@@ -92,7 +92,7 @@ const faqs = [
 								class="flex w-full items-start justify-between text-left text-gray-900 dark:text-white"
 								@click="open = !open"
 								:x-bind:aria-expanded="open.toString()">
-								<span class="text-base font-semibold leading-7">Frequently Asked Questions</span>
+								<span class="text-base font-semibold leading-7">{faq.title}</span>
 								<span class="ml-6 flex h-7 items-center">
 									<svg
 										class="h-6 w-6"
