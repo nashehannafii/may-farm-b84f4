@@ -43,14 +43,14 @@ const { dynamic = false } = Astro.props;
 					<Link href="https://github.com/zankhq/astros">{t("hero.main_button_text")}</Link>
 					{
 						dynamic ? (
-							<Link href="/" style="muted">
+							<Link href="/#" style="muted">
 								Pesan sekarang
 								<span aria-hidden="true" class="pl-1 text-black dark:text-white">
 									→
 								</span>
 							</Link>
 						) : (
-							<Link href="/animated" style="muted">
+							<Link href="/#" style="muted">
 								Hubungi kami
 								<span aria-hidden="true" class="pl-1 text-black dark:text-white">
 									→
