@@ -1,74 +1,73 @@
 ---
 import Link from "@components/ui/link.astro";
-import { localizePath } from "astro-i18next";
 // @ts-ignore
 import { Icon } from "astro-icon/components";
-import { t } from "i18next";
 
 const features = [
 	{
-		title: "Astro",
-		description: "features.astro",
-		icon: "bx:bxs-briefcase",
-		url: "https://astro.build/",
+		title: "Ayam Kampung Organik",
+		description: "Ayam kampung organik yang dipelihara tanpa bahan kimia dan hormon tambahan, menjamin kealamian dan kesehatan.",
+		icon: "bx:bxs-leaf",
+		url: "/products/organic-chicken",
 	},
 	{
-		title: "Alpine",
-		description: "features.alpine",
-		icon: "bx:bxs-window-alt",
-		url: "https://alpinejs.dev/",
+		title: "Pakan Alami",
+		description: "Diberi pakan alami berupa jagung, dedak, dan sisa makanan organik untuk pertumbuhan yang optimal.",
+		icon: "bx:bxs-wheat",
+		url: "/farming/feed",
 	},
 	{
-		title: "Tailwind",
-		description: "features.tailwind",
-		icon: "bx:bxs-data",
-		url: "https://tailwindcss.com/",
+		title: "Free Range System",
+		description: "Sistem umbaran alami memberikan ayam kebebasan bergerak dan tumbuh secara alami dan sehat.",
+		icon: "bx:bxs-tree",
+		url: "/farming/method",
 	},
 	{
-		title: "Localization",
-		description: "features.localization",
-		icon: "bx:bxs-bot",
-		url: "https://github.com/yassinedoghri/astro-i18next",
+		title: "Kualitas Premium",
+		description: "Standar kualitas tinggi dengan daging padat, rasa gurih alami, dan nutrisi yang terjaga.",
+		icon: "bx:bxs-award",
+		url: "/about/quality",
 	},
 	{
-		title: "Light/Dark Mode",
-		description: "features.light_dark_mode",
-		icon: "bx:bxs-file-find",
-		url: "https://tailwindcss.com/docs/dark-mode",
+		title: "Hygiene & Kesehatan",
+		description: "Kandang bersih dan program kesehatan terpadu menjamin ayam bebas penyakit dan aman dikonsumsi.",
+		icon: "bx:bxs-first-aid",
+		url: "/farming/health",
 	},
 	{
-		title: "Giscus",
-		description: "features.giscus",
-		icon: "bx:bxs-user",
-		url: "https://giscus.app/",
+		title: "Pengiriman Cepat",
+		description: "Pengiriman cepat dalam 24 jam untuk menjaga kesegaran produk sampai ke tangan konsumen.",
+		icon: "bx:bxs-truck",
+		url: "/delivery",
 	},
 	{
-		title: "Decap CMS",
-		description: "features.decapcms",
-		icon: "bx:bxs-user",
-		url: "https://decapcms.org/",
+		title: "Sertifikasi Halal",
+		description: "Tersertifikasi halal MUI dan diproses sesuai syariat Islam, menjamin kehalalan produk.",
+		icon: "bx:bxs-star",
+		url: "/certification",
 	},
 	{
-		title: "RSS feed",
-		description: "features.rss",
-		icon: "bx:bxs-user",
-		url: "/rss.xml",
+		title: "Konsultasi Gratis",
+		description: "Konsultasi gratis tentang beternak dan mengolah ayam kampung dari ahli peternakan kami.",
+		icon: "bx:bxs-chat",
+		url: "/consultation",
 	},
 	{
-		title: "Article generator (soon)",
-		description: "features.articlegenerator",
-		icon: "bx:bxs-user",
-		url: "#",
+		title: "Edukasi Peternakan",
+		description: "Program edukasi untuk peternak pemula dan komunitas peternakan yang ingin belajar lebih dalam.",
+		icon: "bx:bxs-book",
+		url: "/education",
 	},
 ];
 ---
 
 <div class="relative mx-auto max-w-5xl px-6 lg:px-8">
 	<div class="mx-auto max-w-2xl lg:text-center">
-		<h2 class="text-base font-semibold leading-7 text-black dark:text-white">{t("features.title")}</h2>
-		<p class="mt-2 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">{t("features.subtitle")}</p>
+		<h2 class="text-base font-semibold leading-7 text-black dark:text-white">Keunggulan Kami</h2>
+		<p class="mt-2 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">Mengapa Memilih Ayam Kampung Kami?</p>
 		<p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-100">
-			{t("features.description")}
+			Kami berkomitmen memberikan yang terbaik dengan metode peternakan tradisional yang modern dan berkelanjutan, 
+			menghasilkan ayam kampung berkualitas premium untuk keluarga Indonesia.
 		</p>
 	</div>
 	<div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -77,17 +76,19 @@ const features = [
 				features.map((item) => (
 					<div class="flex flex-col">
 						<dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
-							<div class="h-5 w-5 flex-none text-black dark:text-white">
+							<div class="h-5 w-5 flex-none text-green-600 dark:text-green-400">
 								<Icon name={item.icon} />
 							</div>
 							{item.title}
 						</dt>
 						<dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-900 dark:text-gray-100">
-							<p class="flex-auto">{t(item.description)}</p>
+							<p class="flex-auto">
+								{item.description}
+							</p>
 							<p class="mt-6">
-								<Link href={item.url} style="muted" size="xs" class="leading-6 text-left text-black dark:text-white">
-									{t("features.learn_more")}{" "}
-									<span class="pl-1 text-black dark:text-white" aria-hidden="true">
+								<Link href={item.url} style="muted" size="xs" class="leading-6 text-left text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300">
+									Pelajari lebih lanjut{" "}
+									<span class="pl-1 text-green-600 dark:text-green-400" aria-hidden="true">
 										→
 									</span>
 								</Link>

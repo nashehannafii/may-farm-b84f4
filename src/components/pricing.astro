@@ -41,7 +41,6 @@ const { plan } = Astro.props;
     <Link 
         href={plan.button.link || "#"} 
         aria-describedby={`tier-${plan.name.toLowerCase().replace(/\s+/g, '-')}`} 
-        style="outline" 
 		class="block w-full mt-6"
     >
         {plan.button.text || "Pesan Sekarang"}
@@ -50,6 +49,7 @@ const { plan } = Astro.props;
     <!-- Tombol Secondary - Lihat Detail -->
     <Link 
         href={plan.detailLink || `/products/${plan.name.toLowerCase().replace(/\s+/g, '-')}`} 
+        style="outline" 
 		class="block w-full mt-6"
     >
         Lihat Detail
