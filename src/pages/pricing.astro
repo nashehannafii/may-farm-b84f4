@@ -11,61 +11,195 @@ changeLanguage("en");
 
 const pricingData = [
 	{
-		name: "Personal",
-		price: "Free",
+		name: "Ayam Kampung Utuh",
+		price: "Rp 85.000",
+		pricePeriod: "ekor",
 		popular: false,
+		image: "https://picsum.photos/seed/ayamutuh/600/400",
 		features: [
-			"Lifetime",
-			"Up to 3 users",
-			"Unlimited Pages",
-			"Astro Sub domain",
-			"Basic Integrations",
-			"Community Support",
+			"Berat 1-1.2 kg/ekor",
+			"Usia 6-8 bulan",
+			"Diberi pakan alami",
+			"Free range (dilepas liar)",
+			"Segar dipotong hari H",
+			"Bebas hormon & antibiotik"
 		],
 		button: {
-			text: "Get Started",
-			link: "/",
+			text: "Pesan Sekarang",
+			link: "/order/ayam-utuh",
 		},
 	},
 	{
-		name: "Startup",
-		price: {
-			monthly: "$19",
-			annual: "$16",
-			discount: "10%",
-			original: "$24",
-		},
+		name: "Daging Ayam Kampung",
+		price: "Rp 120.000",
+		pricePeriod: "kg",
 		popular: true,
+		image: "https://picsum.photos/seed/dagingayam/600/400",
 		features: [
-			"All Free Features",
-			"Up to 20 users",
-			"20 Custom domains",
-			"Unlimited Collaborators",
-			"Advanced Integrations",
-			"Priority Support",
+			"Daging tanpa tulang",
+			"Potongan paha & dada",
+			"Kualitas premium",
+			"Packaging vacuum",
+			"Bersertifikat halal",
+			"Bebas bahan pengawet"
 		],
 		button: {
-			text: "Get Started",
-			link: "#",
+			text: "Beli Sekarang",
+			link: "/order/daging-ayam",
 		},
 	},
 	{
-		name: "Enterprise",
-		price: "Custom",
-		popular: false,
-		image: "https://picsum.photos/200/300",
+		name: "Telur Ayam Kampung",
+		price: "Rp 45.000",
+		pricePeriod: "kg",
+		popular: true,
+		image: "https://picsum.photos/seed/telurayam/600/400",
 		features: [
-			"All Pro Features",
-			"Unlimited Custom domains",
-			"99.99% Uptime SLA",
-			"SAML & SSO Integration",
-			"24/7 Phone Support",
+			"Telur fresh daily",
+			"Kaya omega-3",
+			"Cangkang kuat & bersih",
+			"Kuning telur pekat",
+			"Packing kayu aman",
+			"Minimal pesan 2 kg"
 		],
 		button: {
-			text: "Contact us",
-			link: "/contact",
+			text: "Pesan Telur",
+			link: "/order/telur",
 		},
 	},
+	{
+		name: "Bibit DOC Ayam Kampung",
+		price: "Rp 12.000",
+		pricePeriod: "ekor",
+		popular: false,
+		image: "https://picsum.photos/seed/bibitdoc/600/400",
+		features: [
+			"Umur 1-3 hari",
+			"Vaksin lengkap",
+			"Keturunan unggul",
+			"Jaminan hidup 95%",
+			"Gratis konsultasi",
+			"Minimal order 50 ekor"
+		],
+		button: {
+			text: "Beli Bibit",
+			link: "/order/bibit-doc",
+		},
+	},
+	{
+		name: "Paket Ayam Potong Komplit",
+		price: "Rp 185.000",
+		pricePeriod: "paket",
+		popular: false,
+		image: "https://picsum.photos/seed/paketkomplit/600/400",
+		features: [
+			"1 ekor ayam utuh",
+			"500g hati ampela",
+			"500g ceker ayam",
+			"Bumbu racik tradisional",
+			"Resep masakan gratis",
+			"Gratis ongkir area Ponorogo"
+		],
+		button: {
+			text: "Pesan Paket",
+			link: "/order/paket-komplit",
+		},
+	},
+	{
+		name: "Ceker Ayam Kampung",
+		price: "Rp 35.000",
+		pricePeriod: "kg",
+		popular: false,
+		image: "https://picsum.photos/seed/cekerayam/600/400",
+		features: [
+			"Bersih tanpa kulit",
+			"Potongan rapi",
+			"Cocok untuk sop & soto",
+			"Kaya kolagen",
+			"Bebas bulu",
+			"Fresh dari peternakan"
+		],
+		button: {
+			text: "Beli Ceker",
+			link: "/order/ceker",
+		},
+	},
+	{
+		name: "Hati Ampela Ayam Kampung",
+		price: "Rp 40.000",
+		pricePeriod: "kg",
+		popular: false,
+		image: "https://picsum.photos/seed/hatiampela/600/400",
+		features: [
+			"Bersih dan higienis",
+			"Tanpa bau amis",
+			"Kaya zat besi",
+			"Cocok untuk semur",
+			"Packaging food grade",
+			"Minimal order 0.5 kg"
+		],
+		button: {
+			text: "Pesan Hati Ampela",
+			link: "/order/hati-ampela",
+		},
+	},
+	{
+		name: "Ayam Kampung Presto",
+		price: "Rp 95.000",
+		pricePeriod: "ekor",
+		popular: true,
+		image: "https://picsum.photos/seed/ayampresto/600/400",
+		features: [
+			"Sudah dipresto 30 menit",
+			"Daging empuk siap masak",
+			"Tetap gurih dan bergizi",
+			"Menghemat waktu masak",
+			"Cocok untuk sop & soto",
+			"Tanpa bahan pengawet"
+		],
+		button: {
+			text: "Pesan Presto",
+			link: "/order/ayam-presto",
+		},
+	},
+	{
+		name: "Paket Bumbu Ayam Bakar",
+		price: "Rp 210.000",
+		pricePeriod: "paket",
+		popular: false,
+		image: "https://picsum.photos/seed/ayambakar/600/400",
+		features: [
+			"1 ekor ayam kampung utuh",
+			"Bumbu bakar spesial",
+			"Kecap manis organik",
+			"Bawang goreng crunch",
+			"Lontong/ketupat",
+			"Sambal terasi khas"
+		],
+		button: {
+			text: "Pesan Paket Bakar",
+			link: "/order/paket-bakar",
+		},
+	},
+	{
+		name: "Ayam Kampung Organik Premium",
+		price: "Rp 150.000",
+		pricePeriod: "ekor",
+		popular: true,
+		image: "https://picsum.photos/seed/ayamorganik/600/400",
+		features: [
+			"Sertifikat organik",
+			"Pakan 100% organik",
+			"Usia 8-10 bulan",
+			"Daging lebih padat",
+			"Rasa gurih alami",
+			"Packaging premium box"
+		],
+		button: {
+			text: "Pesan Premium",
+			link: "/order/ayam-premium",
+		},
+	}
 ];
 ---
 
