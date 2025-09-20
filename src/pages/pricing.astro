@@ -204,21 +204,21 @@ const pricingData = [
 ];
 ---
 
-<Layout title="Pricing">
-	<Container>
-		<Sectionhead>
-			<Fragment slot="title">Pricing</Fragment>
-			<Fragment slot="desc"
-				>Affordable Excellence: See Our Pricing.</Fragment
-			>
-		</Sectionhead>
+<Layout title="Harga Produk">
+    <Container>
+        <Sectionhead>
+            <Fragment slot="title">Daftar Harga</Fragment>
+            <Fragment slot="desc"
+                >Kualitas Unggul, Harga Terjangkau: Pilihan Produk Ayam Kampung Terbaik untuk Anda.</Fragment
+            >
+        </Sectionhead>
 
-		<div
-			class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-7xl mt-20 px-4"
-		>
-			{pricingData.map((item) => <Pricing plan={item} />)}
-		</div>
-		<!-- <Logos /> -->
-		<Faq />
-	</Container>
+        <div
+            class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-7xl mt-20 px-4"
+        >
+            {pricingData.map((item) => <Pricing plan={item} />)}
+        </div>
+        <!-- <Logos /> -->
+        <Faq />
+    </Container>
 </Layout>
