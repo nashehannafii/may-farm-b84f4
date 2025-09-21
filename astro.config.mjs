@@ -11,7 +11,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://astros.zank.studio",
+	site: "https://farm.foxecho.my.id",
 	vite: {
 		define: {
 			__DATE__: `'${new Date().toISOString()}'`,
@@ -29,8 +29,8 @@ export default defineConfig({
 			includeAssets: ["favicon.svg"],
 			registerType: "autoUpdate",
 			manifest: {
-				name: "AKUPO - Ayam Kuntara Ponorogo",
-				short_name: "AKUPO",
+				name: "Akupo - Ayam Kuntara Ponorogo",
+				short_name: "Akupo",
 				theme_color: "#ffffff",
 				icons: [
 					{

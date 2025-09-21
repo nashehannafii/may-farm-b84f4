@@ -12,8 +12,8 @@ export const get = async () => {
 	);
 
 	return rss({
-		title: `Astros`,
-		description: "Astros - Starter Template for Astro with Tailwind CSS",
+		title: `Akupo`,
+		description: "Akupo - Ayam Kuntara Ponorogo",
 		site: import.meta.env.SITE,
 
 		items: posts.map((post) => ({
