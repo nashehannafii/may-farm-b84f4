@@ -10,7 +10,7 @@ image:
   src: /images/cara-pemeliharaan-ayam-kampung.jpg
   alt: Perawatan Ayam Kampung
 snippet: Perawatan yang tepat sangat penting untuk menjaga kesehatan dan produktivitas ayam kampung unggul. Simak tips perawatan harian, pakan, dan pencegahan penyakit pada artikel berikut.
-publishDate: 2023-07-01 09:00
+publishDate: 2025-07-01 09:00
 category: Peternakan
 ---
 

@@ -10,7 +10,7 @@ image:
   src: /images/ayam-kuntara.jpg
   alt: Ayam Kuntara
 snippet: Ayam Kuntara adalah salah satu ayam kampung unggul asli Indonesia yang terkenal dengan produktivitas dan ketahanannya. Simak penjelasan lengkap tentang keunggulan, ciri, dan tips beternak Ayam Kuntara.
-publishDate: 2023-06-29 11:39
+publishDate: 2025-06-29 11:39
 category: Peternakan
 ---
 
