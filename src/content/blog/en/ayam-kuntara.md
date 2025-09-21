@@ -1,5 +1,5 @@
 ---
-title: Mengenal Ayam Kuntara: Ayam Kampung Unggul Asli Indonesia
+title: Mengenal Ayam Kuntara - Ayam Kampung Unggul Asli Indonesia
 draft: false
 author: Nasheh Annafii
 tags:
