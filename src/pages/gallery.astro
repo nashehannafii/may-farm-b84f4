@@ -1,0 +1,62 @@
+---
+// filepath: /Users/nashehannafii/MyProjects/may-farm-b84f4/src/pages/gallery.astro
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+
+const galleryData = [
+  {
+    title: "Ayam Kampung Unggul",
+    image: "https://picsum.photos/seed/ayam1/600/400",
+    desc: "Ayam kampung sehat, dibesarkan secara alami di peternakan kami.",
+  },
+  {
+    title: "Telur Ayam Kampung",
+    image: "https://picsum.photos/seed/telur1/600/400",
+    desc: "Telur ayam kampung segar, kaya nutrisi dan omega-3.",
+  },
+  {
+    title: "Bibit DOC Unggul",
+    image: "https://picsum.photos/seed/doc1/600/400",
+    desc: "Bibit DOC ayam kampung unggul, siap dibudidayakan.",
+  },
+  {
+    title: "Ayam Potong Siap Masak",
+    image: "https://picsum.photos/seed/ayam2/600/400",
+    desc: "Ayam kampung potong, segar dan higienis.",
+  },
+  {
+    title: "Ayam Organik Premium",
+    image: "https://picsum.photos/seed/ayam3/600/400",
+    desc: "Ayam kampung organik dengan pakan alami.",
+  },
+  {
+    title: "Produk Olahan Ayam",
+    image: "https://picsum.photos/seed/olahan1/600/400",
+    desc: "Berbagai olahan ayam kampung siap saji.",
+  },
+];
+---
+
+<Layout title="Galeri">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Galeri</Fragment>
+      <Fragment slot="desc">
+        Dokumentasi produk dan aktivitas di peternakan ayam kampung unggul kami.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+      {galleryData.map((item) => (
+        <div class="rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+          <img src={item.image} alt={item.title} class="w-full h-56 object-cover" />
+          <div class="p-4">
+            <h3 class="font-semibold text-lg mb-2">{item.title}</h3>
+            <p class="text-gray-600 text-sm">{item.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </Container>
+</Layout>
